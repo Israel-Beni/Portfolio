@@ -5,8 +5,10 @@ import ProfileImage from '../../media/profile.jfif';
 class Profile extends React.Component {
     render() {
         return (
-            <div className="component-container Profile-container">
-                <img className="profile-image" src={ProfileImage} alt="my profile" />
+            <div className="component-container profile-container">
+                <div className="profile-image">
+                    <img src={ProfileImage} alt="my profile" />
+                </div>
                 <div className="profile-info">
                     <div className="profile-header">
                         <div className="column1">
