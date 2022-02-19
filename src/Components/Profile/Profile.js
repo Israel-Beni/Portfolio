@@ -1,6 +1,8 @@
 import React from 'react';
 import './Profile.css';
 import ProfileImage from '../../media/profile.jfif';
+import email from '../../media/email.svg';
+import phone from '../../media/phone.svg';
 
 class Profile extends React.Component {
     render() {
@@ -16,11 +18,33 @@ class Profile extends React.Component {
                             <p className="title">Front-end Developer</p>
                         </div>
                         <div className="column2">
-                            <p className="email">israelbeni71@gmail.com</p>
-                            <p className="contact-number">(+603) 546 624 342</p>
+                            <div className="email-container">
+                                <img src={email} alt="" />
+                                <p className="email">israelbeni71@gmail.com</p>
+                            </div>
+                            <div className="phone-container">
+                                <img src={phone} alt="" />
+                                <p className="contact-number">(+603) 546 624 342</p>
+                            </div>
                         </div>
                     </div>
                     <div className="description">
+                        <div className="fade-out"></div>
+                        <p>
+                            Self-motivated developer, who is willing to learn and create outstanding UI 
+                            applications.
+                        </p>
+                        <br />
+                        <p>
+                            Self-motivated developer, who is willing to learn and create outstanding UI 
+                            applications.
+                        </p>
+                        <br />
+                        <p>
+                            Self-motivated developer, who is willing to learn and create outstanding UI 
+                            applications.
+                        </p>
+                        <br />
                         <p>
                             Self-motivated developer, who is willing to learn and create outstanding UI 
                             applications.

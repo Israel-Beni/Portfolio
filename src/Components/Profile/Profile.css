@@ -27,6 +27,7 @@
 
 .profile-header {
     display: flex;
+    margin-bottom: 2.278rem;
 }
 
 .profile-header .column1 {
@@ -39,15 +40,59 @@
     font-size: 1.333rem;
     color: #4F4F4F;
     line-height: 1.611rem;
+    margin-bottom: .333rem;
 }
 
 .profile-header .title {
     font-weight: 500;
     font-size: 1rem;
-    color: #828282
+    color: #828282;
+    font-weight: 500;
 }
 
 .profile-header .column2 {
-    width: 12.315rem;
+    flex: 1 0;
+    align-self: flex-end;
+}
 
+.email-container {
+    width: 100%;
+    margin-bottom: .556rem;
+}
+
+.email-container img, .phone-container img {
+    width: 1.135rem;
+    height: .889rem;
+    margin-right: 1.022rem;
+    display: inline;
+}
+
+.email-container img {
+    background: local('../../media/email.png');
+}
+
+.email-container .email {
+    display: inline;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #4F4F4F;
+}
+
+.phone-container .contact-number {
+    display: inline;
+}
+
+.profile-info .description {
+    max-height: 9.722rem;
+    overflow-y: hidden;
+    width: 36.603rem;
+    position: relative;
+}
+
+.profile-info .description .fade-out {
+    position: absolute;
+    bottom: 0;
+    height: 9.722rem;
+    width: 36.603rem;
+    background: linear-gradient(to bottom, transparent, white);
 }
